@@ -14,10 +14,11 @@ if [ $PULL -gt 1 ]
 then
 
   # Add / modify whatever command you need for example :
+  # pm2 restart ${PWD##*/}
   # supervisorctl stop ${PWD##*/}
   # npm i
   supervisorctl restart ${PWD##*/}
-  echo "Repo updated and restart from git pull at $(date '+%Y-%m-%d %H:%M:%S')" >> autoprod.log
+  echo "Repo updated and restarted from git pull at $(date '+%Y-%m-%d %H:%M:%S')" >> autoprod.log
 
 # else
   # echo "No update from git pull command at $(date '+%Y-%m-%d %H:%M:%S')" >> autoprod.log
