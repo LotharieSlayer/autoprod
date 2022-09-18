@@ -8,9 +8,11 @@
 # Warning : The repository/folder name need to be the same as the process name to let this script works !
 
 # Process and git repository folder name
+# YOU NEED TO CHANGE THIS VARIABLE, IF YOUR GIT REPOSITORY NAME IS "myrepo" THEN PROCESS_NAME="myrepo" !
 PROCESS_NAME="my_super_cool_repo"
 
 # Git folder location
+# YOU MAY NEED TO CHANGE THIS DIRECTORY IF YOUR PROCESSES ARE NOT RUNNING INTO THE home/ FOLDER !
 cd /home/$PROCESS_NAME
 
 # git pull to update the code
