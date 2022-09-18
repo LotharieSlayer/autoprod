@@ -13,6 +13,6 @@ After placing `autoprod.sh` in your local repository folder and added to your .g
 
 In order to run this script automatically, you'll need [Cron](https://doc.ubuntu-fr.org/cron) which is a job scheduler. (already included in most Linux distros)
 - Run `crontab -e` in order to enter and modify your crontab file
-- You can setup Autoprod like this following line by adding this line to the file : `* * * * *       root    sh /home/my_super_cool_repo/autoprod.sh`
+- You can run Autoprod every minute like this following line to the crontab file, just add : `* * * * *       root    sh /home/my_super_cool_repo/autoprod.sh`
 
 Once launched, this script will log into `/home/my_super_cool_repo/autoprod.log` any update from your git remote request.
