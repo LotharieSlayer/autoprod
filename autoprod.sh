@@ -5,7 +5,7 @@
 # Here's supervisor example but it can be any other process manager
 # The only thing you have to change is the PROCESS_NAME variable which is the name of your process/git repo
 # You can change the Git folder location too, by default, all your git folders must be in your home/ folder.
-# Warning : The repository/folder name need to be similar has the process name to let this script works !
+# Warning : The repository/folder name need to be the same as the process name to let this script works !
 
 # Process and git repository folder name
 PROCESS_NAME="my_super_cool_repo"
