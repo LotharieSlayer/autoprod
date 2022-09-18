@@ -18,3 +18,9 @@ In order to run this script automatically, you'll need [Cron](https://doc.ubuntu
 - You can run Autoprod every minute like this by adding the following line to the crontab file, just add : `* * * * *       root    sh /home/my_super_cool_repo/autoprod.sh`
 
 Once launched, this script will log into `/home/my_super_cool_repo/autoprod.log` any update from your git remote request.
+
+### Tips :
+
+If you `git pull` from another branch than your master/main branch, you'll have to `git pull origin <your_branch>` and not just `git pull` anymore. The PULL variable must be greater than 3 if it's from another branch in the condition.
+
+I may use a different method in the future to know if there is some updates or not. (instead of a simple output line counter)
