@@ -3,10 +3,10 @@ autoprod.sh allows you to easily deploy your process on your server in a simple 
 
 ### Installation :
 
-After placing `autoprod.sh` in your local repository folder and added to your .gitignore project file, you can use cron as the job scheduler to let this script running automatically.
+After placing `autoprod.sh` in your local repository folder, you can use cron as the job scheduler to let this script run automatically.
 
 - Please check and modify the autoprod.sh because you don't may use supervisor as your process manager but maybe pm2 or another... 
-- After that the only thing you have to change is the PROCESS_NAME variable which is the name of your process/git repo
+- After that **the only thing you have to change is the PROCESS_NAME variable** which is the name of your process/git repo
 - You can change the Git folder location too, by default, **all your git folders must be in your home/ folder.**
 
 **Warning :** The git repository/folder name need to be the same as the process name to let this script works !
